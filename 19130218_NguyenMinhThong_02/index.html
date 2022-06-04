@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<title>Tetris</title>
+</head>
+<body>
+	<div class="main">
+		<div class="left-creen">
+			<div id="nextScreen"></div>
+			<h2 id ="cslv" style="display: none;">Level 1</h2>
+			
+		</div>		
+		<div id="mainScreeen" ></div>
+		<div id="controller">
+			<div class="score"><label>Score: <input id="txt_score" style="width: 95px" type="text" name=""></label></div>
+			<hr>
+			<div class="level"><label>Level: <input id="txt_level" style="width: 99px" type="text" name=""></label></div>
+			<hr>
+			<div class="level">
+				<label>Chose level: 
+					<select name="lv" id="txt_choselevel">
+						<option value="0">0</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+			  		</select>
+				</label>
+			</div>
+			<hr>
+			<h3 id="pause-tt">GAME IS PAUSE</h3>
+			<div class="ctbtn">
+				<input class="btn" id="btn_start" type="button" name="" value="START" status="start" style="background-color: yellow ;">
+				<input class="btn" id="btn_resume" type="button" name="" value="RESUME" status="resume" style="background-color: green ; display: none;">
+				<input class="btn" id="btn_pause" type="button" name="" value="PAUSE" status="pause" style="background-color: red ; display: none;">
+			</div>
+			<div class="rulect" style="margin-top: 60px;">
+				<hr>
+				<p>KeyUp: Rolate</p>
+				<hr>
+				<p>KeyDown: MoveDown</p>
+				<hr>
+				<p>KeyLeft: MoveLeft</p>
+				<hr>
+				<p>KeyRight: MoveRight</p>
+				<hr>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/block.js"></script>
+<script type="text/javascript" src="js/brick.js"></script>
+<script type="text/javascript" src="js/board.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+</html>

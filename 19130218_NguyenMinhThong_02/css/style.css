@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-height: 501px;
+}
+
+.main .left-creen {
+  min-height: 400px;
+  min-width: 76px;
+  border: solid 1px black;
+}
+
+.main .left-creen #nextScreen {
+  max-height: 76px;
+  border-bottom: solid 1px black;
+}
+
+.main #mainScreeen {
+  margin: 0 10px 0 10px;
+  min-height: 400px;
+  border: solid 1px black;
+}
+
+.main #controller {
+  padding: 0px 5px 0px 5px;
+  min-height: 400px;
+  border: solid 1px black;
+}
+
+.main #controller .score {
+  margin-top: 10px;
+}
+
+.main #controller .level {
+  margin-top: 10px;
+}
+
+.main #controller #pause-tt {
+  margin-top: 10px;
+  background-color: red;
+  display: none;
+}
+
+.main #controller .ctbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+}
+
+.main #controller .ctbtn .btn {
+  padding: 10px 0px 10px 0px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.main #controller .ctbtn .btn:hover {
+  cursor: pointer;
+  color: gray;
+}
+/*# sourceMappingURL=style.css.map */

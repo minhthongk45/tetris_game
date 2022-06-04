@@ -1,0 +1,61 @@
+$boder : solid 1px black;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    max-height: 501px;
+    .left-creen{
+        min-height: 400px;
+        min-width: 76px;
+        border: $boder;
+        #nextScreen{
+            max-height: 76px;
+            border-bottom: $boder;
+        }
+    }
+    #mainScreeen{
+        margin: 0 10px 0 10px; 
+        min-height: 400px; 
+        border: $boder
+    }
+    #controller{
+        padding: 0px 5px 0px 5px;
+        min-height: 400px; 
+        border: $boder;
+        .score{
+            margin-top: 10px;
+        }
+        .level{
+            margin-top: 10px;
+        }
+        #pause-tt{
+            margin-top: 10px;
+            background-color: red;
+            display: none;
+        }
+        .ctbtn{
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+            .btn{
+                padding: 10px 0px 10px 0px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+            .btn:hover{
+                cursor: pointer;
+                color: gray;               
+            }
+        }
+    }
+}
+
+
